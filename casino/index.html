@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="casino.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script>
+      $(function() {
+          $(".toggle").on("click", function () {
+              if($( ".item").hasClass("active")){
+                  $( ".item").removeClass("active");
+    
+    
+              }
+              else{
+                  $(".item").addClass("active");
+    
+              }
+    
+          }) 
+          
+      });
+    
+    
+    </script>
+
+    
+    <title>casino</title>
+    
+</head>
+<body>
+
+  <nav>
+    <ul class="menu">
+      <li class="logo"><span class="szin">W</span><span class="szin1">EB</span><span class="szin">T</span><span class="szin1">OP</span></li>
+      <li class="item"><a href="#">Home</a></li>
+      <li class="item"><a href="#">Magamról</a></li>
+      <li class="item"><a href="#">Kapcsolat</a></li>
+      <li class="item button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><a href="#">Bejelentkezés</a></li>
+      <li class="item button secondary" onclick="document.getElementById('id02').style.display='block'" style="width:auto;"><a href="#">Regisztráció</a></li>
+      <li class="toggle"><span class="bars"></span></li>
+  </ul>   
+
+  </nav>
+  
+  
+  
+  <div id="id01" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer3">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close1" title="Close Modal">&times;</span>
+        
+      </div>
+  
+      <div class="container3">
+        <label for="uname"><b>Felhasználónév</b></label>
+        <input type="text" placeholder="" name="uname" required>
+  
+        <label for="psw"><b>Jelszó</b></label>
+        <input type="password" placeholder="" name="psw" required>
+          
+        <button type="submit">Belépés</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Emlékezz rám
+        </label>
+      </div>
+  
+      <div class="container3" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn1">Mégsem</button>
+        <span class="psw">Elfelejtetted <a class="pass" href="#">a jelszavad?</a></span>
+      </div>
+    </form>
+  </div>
+
+  
+
+
+
+<div id="id02" class="modal4">
+  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal4-content4" action="/action_page.php">
+    <div class="container4">
+      <h1>Regisztráció</h1>
+      <br>
+      <p>Fiók létrehozásához töltsd ki ezt az űrlapot.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="" name="email" required>
+
+      <label for="psw"><b>Jelszó</b></label>
+      <input type="password" placeholder="" name="psw" required>
+
+      <label for="psw-repeat"><b>Jelszó újra</b></label>
+      <input type="password" placeholder="" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Emlékezz rám
+      </label>
+
+      <p>Fiók létrehozásával elfogadod az Általános Szerződési Feltételeinket . <a href="#" style="color:dodgerblue">Általános Szerződési Feltételek</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Mégsem</button>
+        <button type="submit" class="signupbtn">Regisztráció</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+  
+
+<div class="clearfix"></div>
+<div class="bej">
+  <div class="bej1"></div>
+</div>
+
+
+<div class="container1">
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="kepvalto" src="casino.jpg">
+      <div class="text1">Játékok szigete</div>
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="kepvalto" src="Online-Casino.jpg">
+      <div class="text1">Válogass a játékok között</div>
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img class="kepvalto" src="book-of-ra.png">
+      <div class="text1">A hatalmas nyereményekért</div>
+
+    </div>
+
+  </div>
+  
+
+  
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+
+</div>
+  <div class="clearfix"></div>
+  
+  <div class="clearfix"></div>
+  
+    <div class="keret">
+    <div class="container">
+        <img src="legendary.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div  class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/legendary-excalibur/" >Játék</a>
+        </div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="money.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/money-mouse/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="mission.png" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/mission-cash/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="rise-of-maya.png" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/rise-of-maya/">Játék</a></div>
+        </div>
+      </div>
+    
+    
+
+      <div class="container">
+        <img src="legacy.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/legacy-of-dead/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="release.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/release-the-kraken/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="blood.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/netent/blood-suckers/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="bookofra.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.play-book-slots.com/hu/index.html">Játék</a></div>
+        </div>
+      </div>
+    
+    
+      <div class="container">
+        <img src="lovas.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank" href="https://www.casinoshark.hu/jatekok/scudamores-super-stakes/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="WildTomeOftheWoods.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank"  href="https://www.casinoshark.hu/jatekok/wild-tome-of-the-woods/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="LegendofTheGoldenMonkey.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank"  href="https://www.casinoshark.hu/jatekok/legend-of-the-golden-monkey/">Játék</a></div>
+        </div>
+      </div>
+      <div class="container">
+        <img src="warlords.jpg" alt="Avatar" class="image">
+        <div class="center"></div>
+        <div class="overlay">
+          <div class="text"><a class="a1" target="blank"  href="https://www.casinoshark.hu/jatekok/warlords-crystals-of-power/">Játék</a></div>
+        </div>
+      </div>
+      </div>
+    
+    <footer><div class="elso">&copy; 2020 Sebők István</div>
+      
+     <div class="kozep"><p> Ajánlott linkek: </p><br><a target="_blank" href="https://vegas.hu/?from=/postlogin/payment/deposit">Vegas.hu</a><br><a  target="_blank"  href="https://energycasino.com/hu/specials/welcome-package-hu-a?btag=658394_A0C7078100384B6BA5894D3C035AB4B2&kw=energycasino&gclid=EAIaIQobChMI0-rU6aHI6wIV0e3tCh0UPwQsEAAYAiAAEgKekPD_BwE">Energy casino</a></div>
+     <div class="szelso"> <p> Kapcsolat </p> <br>
+     <div class="szelso1"> <a href=""> <i class="fab fa-facebook"></i></a> <a href=""><i class="fas fa-envelope"></i></a></div> </div>  
+    </footer>
+
+    <script>
+      // Get the modal
+      var modal = document.getElementById('id01');
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+      </script>    
+    
+    
+                                                                        
+</body>
+<script>
+  var menu = $(".menu");
+  $(window).resize(function () {
+    $(".menu-toggle").removeClass("active");
+    if ($(window).innerWidth() > 600) {
+      menu.show();
+    } else {
+      menu.hide();
+    }
+  });
+  $(".menu-toggle").click(function () {
+    $(this).toggleClass("active");
+    menu.slideToggle();
+  });
+  $(".open-submenu").click(function () {
+    $(this).toggleClass("active");
+    $(this).next("ul").slideToggle();
+    $(this).children(".arrow").toggleClass("down up");
+  });
+
+
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 5 seconds
+  }
+</script>
+<script>
+  // Get the modal
+  var modal = document.getElementById('id02');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+  </script>
+
+</html>
